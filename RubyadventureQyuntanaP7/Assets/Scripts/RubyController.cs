@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Ruby : MonoBehaviour
 {
-    public int maxhealth = 5;
+    public int maxHealth = 5;
     int currentHealth;
 
 
