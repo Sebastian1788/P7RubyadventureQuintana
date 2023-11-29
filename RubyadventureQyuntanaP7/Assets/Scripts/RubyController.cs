@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+<<<<<<< HEAD
 public class RubyController: MonoBehaviour
 {
     public float speed = 3.0f;
@@ -9,6 +10,13 @@ public class RubyController: MonoBehaviour
     public int maxHealth = 5;
     public float timeInvincible = 2.0f;
     public int health { get { return currentHealth; } }
+=======
+public class RubyController : MonoBehaviour
+{
+    public float speed = 3.0f;
+    public int maxHealth = 5;
+   public int health { get { return currentHealth; } }
+>>>>>>> 63bd88aabf7fe24bce6a4b77fec97b9caf01cae2
     int currentHealth;
 
     bool isInvincible;
@@ -27,6 +35,7 @@ public class RubyController: MonoBehaviour
         rigidbody2d = GetComponent<Rigidbody2D>();
         currentHealth = maxHealth;
         animator = GetComponent<Animator>();
+
 
     }
 
@@ -62,10 +71,17 @@ public class RubyController: MonoBehaviour
         Vector2 position = rigidbody2d.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
         position.y = position.y + speed * vertical * Time.deltaTime;
+<<<<<<< HEAD
 
         rigidbody2d.MovePosition(position);
     }
     public void ChangeHealth(int amount)
+=======
+ 
+        rigidbody2d.MovePosition(position);
+    }
+   public void ChangeHealth(int amount)
+>>>>>>> 63bd88aabf7fe24bce6a4b77fec97b9caf01cae2
     {
         if(amount < 0)
         {

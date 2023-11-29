@@ -16,6 +16,10 @@ public class HealthCollectables : MonoBehaviour
             }
            
         }
+<<<<<<< HEAD
 
+=======
+       
+>>>>>>> 63bd88aabf7fe24bce6a4b77fec97b9caf01cae2
     }
 }
